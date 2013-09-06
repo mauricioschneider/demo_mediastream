@@ -1,0 +1,22 @@
+extends ../container-app
+
+block content
+  form(action='/video/post', method='post')
+
+      .control-group
+        label.control-label(for='title') Title
+        .controls
+          input#title.input-xxlarge(type='text', placeholder='Title', name='video[title]')
+      .control-group
+        label.control-label(for='is_published') Is published?
+        .controls
+          input#is_published.input-xxlarge(type='checkbox', name='video[is_published]')
+      .control-group
+        label.control-label(for='categories') Category
+        .controls
+          input#categories.input-xxlarge(type='text', name='video[category]')
+      .control-group
+        label.control-label(for='duration') Duration
+        .controls
+          textarea#duration.input-xxlarge(placeholder='00:00:00', rows='6', name='video[duration]')
+      button.btn(type='submit') Create

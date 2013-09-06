@@ -1,0 +1,14 @@
+{
+  "name": "videomanager",
+  "version": "0.0.1alpha",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "3.3.8",
+    "jade": "*",
+    "mongoose": "3.6.19",
+    "passport": "0.1.17"
+  }
+}

@@ -1,0 +1,21 @@
+head
+  include inc/bootstrap
+
+div.navbar.navbar-inverse.navbar-fixed-top
+  div.navbar-inner
+    div.container-fluid
+      a(href='#').brand #{title}
+      div.nav-collapse.collapse
+        ul.nav
+          li.active
+            a(href='/') Videos
+          li
+            a(href='/users') Users
+          li
+            a(href='/categories') Categories
+
+div.container-fluid
+    block content
+
+  footer
+    p &copy; Company 2011
